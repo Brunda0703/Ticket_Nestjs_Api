@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "63e40b2d-6074-4b13-b0c8-836af95e18db",
+		"name": "Ticket_nestjs_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/tickets",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"seat_id\": \"5fac34e2989ed92180068e8c\",\r\n    \"Name\": \"Brunda\",\r\n    \"is_reset\": true,\r\n    \"Seat_No\": 20\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/tickets",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tickets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/seats",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Seat_No\": 40,\r\n    \"user_id\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/seats",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"seats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/tickets/20",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/tickets/20",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tickets",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/tickets/reset",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/tickets/reset",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tickets",
+						"reset"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/tickets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/tickets",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tickets"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
