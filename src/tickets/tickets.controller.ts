@@ -40,7 +40,7 @@ export class TicketsController {
     const oldtickets = await this.ticketsService.getOldTicket();
     const booked = await this.seatsService.getBookedSeats();
     const unbooked = await this.seatsService.getUnBookedSeats();
-    return {passangers: tickets, old_passangers: oldtickets, booked: booked, unbooked: unbooked};
+    return {passengers: tickets, old_passengers: oldtickets, booked: booked, unbooked: unbooked};
   }
 
   @Get('reset')
